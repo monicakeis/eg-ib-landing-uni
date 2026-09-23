@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Add after launch:
+# Sitemap: https://YOUR-LIVE-DOMAIN/sitemap.xml

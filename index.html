@@ -18,8 +18,102 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Eastwood Global","alternateName":"Eastwood Global Online School","url":"https://www.eastwood.global","logo":"https://www.eastwood.global/favicon.ico","email":"admissions@eastwood.global","telephone":"+41 21 805 05 91","address":{"@type":"PostalAddress","streetAddress":"Av. de Chillon 57","postalCode":"1820","addressLocality":"Montreux","addressCountry":"CH"},"sameAs":["https://www.instagram.com/eastwoodglobal/"]},{"@context":"https://schema.org","@type":"Course","name":"IB Diploma Programme (online)","description":"The full International Baccalaureate Diploma Programme, delivered live and online for students aged 16 to 18, on two global timetables.","provider":{"@type":"EducationalOrganization","name":"Eastwood Global","sameAs":"https://www.eastwood.global"},"educationalCredentialAwarded":"IB Diploma","inLanguage":"en","hasCourseInstance":{"@type":"CourseInstance","courseMode":"online","courseWorkload":"Live, teacher-led classes"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Eastwood Global allowed to offer the IB Diploma online?","acceptedAnswer":{"@type":"Answer","text":"Yes. Eastwood Global is allowed by the International Baccalaureate to offer the full IB Diploma Programme online, as part of the IB’s approved online model. It is one of seven schools in the world with this permission."}},{"@type":"Question","name":"What if my child misses a live class?","acceptedAnswer":{"@type":"Answer","text":"Every class is live and teacher-led, and every live lesson is recorded. Students who miss a class for training, competition or travel can catch up on the recording and stay level with their peers."}},{"@type":"Question","name":"What does the admissions process involve?","acceptedAnswer":{"@type":"Answer","text":"Applicants to IBDP 1 complete a proctored online assessment in English and Mathematics of around 1.5 hours, followed by an interview with the Admissions and Academic team. Families can expect a decision within approximately two weeks of a complete application."}},{"@type":"Question","name":"When can my child start the IB Diploma?","acceptedAnswer":{"@type":"Answer","text":"Students should apply for the full two-year IB Diploma Programme, starting at the beginning of the academic year. Applications are encouraged by mid-August. Mid-programme entry is restricted."}},{"@type":"Question","name":"How is tuition shared?","acceptedAnswer":{"@type":"Answer","text":"Tuition varies by programme and is shared directly with families during the admissions process. A free admissions call is the fastest way to receive the figures for your child."}}]}]</script>
+<!-- Tracking and consent. Matches eastwood.global. See README > Tracking and consent. -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(){
+var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
+window.egOptIn=/^(Europe\/|Atlantic\/(Reykjavik|Canary|Madeira|Azores|Faroe))/.test(tz);
+var saved=null;try{saved=JSON.parse(localStorage.getItem('eg_consent')||'null')}catch(e){}
+window.egConsent=saved&&typeof saved==='object'?saved:(window.egOptIn?null:{analytics:true,marketing:true});
+window.egConsentMap=function(c){var a=c&&c.analytics?'granted':'denied',m=c&&c.marketing?'granted':'denied';return{analytics_storage:a,ad_storage:m,ad_user_data:m,ad_personalization:m,functionality_storage:'granted',security_storage:'granted'};};
+gtag('consent','default',Object.assign(egConsentMap(null),{wait_for_update:500,region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']}));
+gtag('consent','default',egConsentMap({analytics:true,marketing:true}));
+gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);
+if(saved)gtag('consent','update',egConsentMap(saved));
+})();
+</script>
 <!-- Google Tag Manager (same container as eastwood.global) -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PGWND4HR');</script>
+<script>
+(function(){
+var PIXEL='233289672835066',GA4='G-90VHGTGEM0',own={meta:false};
+function mk(){return !!(window.egConsent&&window.egConsent.marketing);}
+function loadMeta(){
+  var st=window.fbq&&fbq.instance&&fbq.instance.pixelsByID;
+  if(st&&st[PIXEL])return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  if(!mk())fbq('consent','revoke');
+  fbq('init',PIXEL);fbq('track','PageView');own.meta=true;
+}
+function loadGA4(){
+  var g=window.google_tag_manager;if(g&&g[GA4])return;
+  var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA4;document.head.appendChild(s);
+  gtag('js',new Date());gtag('config',GA4);
+}
+function save(c){
+  window.egConsent=c;try{localStorage.setItem('eg_consent',JSON.stringify(c))}catch(e){}
+  gtag('consent','update',egConsentMap(c));
+  if(window.fbq)fbq('consent',c.marketing?'grant':'revoke');
+  dataLayer.push({event:'consent_update',consent_analytics:c.analytics,consent_marketing:c.marketing});
+  close();
+}
+var INK='#000077',F='font-family:Inter,system-ui,sans-serif;';
+var LEAF='min-height:48px;padding:0 28px;border-radius:24px 0 24px 0;font:700 16px/1 Inter,system-ui,sans-serif;cursor:pointer;white-space:nowrap;transition:background-color 200ms,color 200ms;';
+function btn(v,label,kind){
+  if(kind==='link')return '<button type="button" data-v="'+v+'" style="min-height:48px;padding:0 4px;background:none;border:0;border-bottom:3px solid '+INK+';color:'+INK+';font:700 16px/1 Inter,system-ui,sans-serif;cursor:pointer;white-space:nowrap">'+label+'</button>';
+  return '<button type="button" data-v="'+v+'" style="'+LEAF+(kind==='solid'?'background:'+INK+';color:#FFFFFF;border:3px solid '+INK+';':'background:#FFFFFF;color:'+INK+';border:3px solid '+INK+';')+'">'+label+'</button>';
+}
+function close(){['eg-consent','eg-consent-prefs'].forEach(function(id){var n=document.getElementById(id);if(n)n.remove();});}
+function onClick(e){
+  var v=e.target.closest&&e.target.closest('[data-v]');if(!v)return;v=v.getAttribute('data-v');
+  if(v==='all')save({analytics:true,marketing:true});
+  else if(v==='none')save({analytics:false,marketing:false});
+  else if(v==='manage')prefs();
+  else if(v==='save'){var p=document.getElementById('eg-consent-prefs');save({analytics:p.querySelector('[name=analytics]').checked,marketing:p.querySelector('[name=marketing]').checked});}
+}
+function bar(){
+  close();
+  var el=document.createElement('div');el.id='eg-consent';el.setAttribute('role','region');el.setAttribute('aria-label','Cookie consent');
+  el.style.cssText=F+'position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:#FFFFFF;color:'+INK+';border-top:1px solid #3A3A4A;padding:18px clamp(16px,2.4vw,32px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;box-shadow:0 -8px 32px rgba(0,0,119,.08)';
+  el.innerHTML='<p style="margin:0;flex:1 1 420px;font-size:16px;line-height:1.5;font-weight:500">Select \u201cAccept all\u201d to agree to our use of cookies and similar technologies to enhance your browsing experience, security, analytics and customization. Select \u201cManage cookies\u201d to make more choices or opt out.</p>'
+   +'<div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px">'+btn('manage','Manage Cookies','link')+btn('none','Decline All','outline')+btn('all','Accept All','solid')+'</div>';
+  el.addEventListener('click',onClick);document.body.appendChild(el);
+}
+function row(name,title,desc,on,locked){
+  return '<label style="display:flex;gap:16px;align-items:flex-start;justify-content:space-between;padding:16px 0;border-top:1px solid #D3D9E8;cursor:'+(locked?'default':'pointer')+'"><span><span style="display:block;font-weight:700;font-size:16px">'+title+'</span><span style="display:block;margin-top:4px;font-size:14px;line-height:1.5;color:#2A2A55">'+desc+'</span></span>'
+   +'<input type="checkbox" name="'+name+'"'+(on?' checked':'')+(locked?' disabled':'')+' style="flex:none;width:22px;height:22px;margin-top:2px;accent-color:'+INK+'"></label>';
+}
+function prefs(){
+  close();var c=window.egConsent||{analytics:false,marketing:false};
+  var el=document.createElement('div');el.id='eg-consent-prefs';el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');el.setAttribute('aria-label','Manage cookies');
+  el.style.cssText=F+'position:fixed;inset:0;z-index:2147483001;background:rgba(0,0,40,.45);display:grid;place-items:center;padding:16px';
+  el.innerHTML='<div style="background:#FFFFFF;color:'+INK+';width:min(560px,100%);max-height:calc(100vh - 32px);overflow:auto;padding:28px;border-radius:24px 0 24px 0">'
+   +'<h2 style="margin:0 0 8px;font-size:22px;font-weight:800;letter-spacing:-0.01em">Manage Cookies</h2>'
+   +'<p style="margin:0 0 12px;font-size:15px;line-height:1.5">Choose which cookies we can use. You can change this at any time from Cookie settings in the footer. <a href="https://www.eastwood.global/privacy-policy" style="color:'+INK+';text-underline-offset:3px">Privacy Policy</a></p>'
+   +row('essential','Essential','Needed for the site to work and stay secure. Always on.',true,true)
+   +row('analytics','Analytics','Helps us understand how the page is used, through Google Analytics.',c.analytics,false)
+   +row('marketing','Marketing','Measures our advertising on Google and Meta.',c.marketing,false)
+   +'<div style="display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px;margin-top:20px">'+btn('none','Decline All','outline')+btn('save','Save Choices','solid')+'</div></div>';
+  el.addEventListener('click',onClick);
+  el.addEventListener('keydown',function(e){if(e.key==='Escape'){close();if(!window.egConsent)bar();}});
+  document.body.appendChild(el);var f=el.querySelector('[name=analytics]');if(f)f.focus();
+}
+window.addEventListener('load',function(){setTimeout(function(){loadMeta();loadGA4();if(window.egOptIn&&!window.egConsent)bar();},1200);});
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
+  if(h==='#cookie-settings'){e.preventDefault();prefs();return;}
+  if(/^https:\/\/wa\.me\//.test(h)||/^mailto:/i.test(h)){
+    var m=/^mailto:/i.test(h)?'email':'whatsapp';
+    if(own.meta)fbq('track','Contact');
+    dataLayer.push({event:'contact_click',contact_method:m});
+  }else if(/eastwood\.global\/enquire-now-form/.test(h)){
+    if(location.search.length>1){try{var u=new URL(a.href);new URLSearchParams(location.search).forEach(function(v,k){if(!u.searchParams.has(k))u.searchParams.set(k,v)});a.href=u.toString();}catch(_){}}
+    dataLayer.push({event:'enquire_click',link_url:a.href});
+  }
+},true);
+})();
+</script>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -43,7 +137,7 @@
 <h3>How is tuition shared?</h3>
 <p>Tuition varies by programme and is shared directly with families during the admissions process. A free admissions call is the fastest way to receive the figures for your child.</p>
 <h2>Book a free admissions call</h2>
-<p><a href="https://www.eastwood.global/enquire-now-form?utm_source=ib&amp;utm_medium=landing&amp;utm_content=noscript">Book a free admissions call</a> or <a href="https://wa.me/41799625034">message us on WhatsApp</a>.</p>
+<p><a href="https://www.eastwood.global/enquire-now-form">Book a free admissions call</a> or <a href="https://wa.me/41799625034">message us on WhatsApp</a>.</p>
 <p>Eastwood Global, Av. de Chillon 57, 1820 Montreux, Switzerland. <a href="tel:+41218050591">+41 21 805 05 91</a> · <a href="mailto:admissions@eastwood.global">admissions@eastwood.global</a></p>
 </main>
 </noscript>
@@ -107,7 +201,7 @@
         </sc-for>
       </span>
     </div>
-    <a data-btn="" href="https://www.eastwood.global/enquire-now-form?utm_source=ib&amp;utm_medium=landing&amp;utm_content=nav" data-m="fade" data-d="900" data-t="300" style="margin-left: auto; display: inline-flex; align-items: center; justify-content: center; text-align: center; min-height: 44px; max-width: clamp(150px, 44vw, 320px); padding: 10px 18px; background-color: #D7FF00; background-image: linear-gradient(110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 65%); background-size: 250% 100%; background-position: 120% 0; background-repeat: no-repeat; color: #000077; font-size: 0.875rem; font-weight: 700; line-height: 1.2; text-decoration: none; border-radius: 999px; transform-origin: right center; transform: {{ ctaScale }}; transition: background-position 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 320ms cubic-bezier(0.16, 1, 0.3, 1);" style-hover="background-position: -20% 0; color: #000077;"><span style="display: {{ navFull }};">Book a free admissions call</span><span style="display: {{ navShort }};">Book a call</span><span aria-hidden="true" data-arw="" style="display: inline-block; margin-left: 0.6rem; transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);">→</span></a>
+    <a data-btn="" href="https://www.eastwood.global/enquire-now-form" data-m="fade" data-d="900" data-t="300" style="margin-left: auto; display: inline-flex; align-items: center; justify-content: center; text-align: center; min-height: 44px; max-width: clamp(150px, 44vw, 320px); padding: 10px 18px; background-color: #D7FF00; background-image: linear-gradient(110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 65%); background-size: 250% 100%; background-position: 120% 0; background-repeat: no-repeat; color: #000077; font-size: 0.875rem; font-weight: 700; line-height: 1.2; text-decoration: none; border-radius: 999px; transform-origin: right center; transform: {{ ctaScale }}; transition: background-position 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 320ms cubic-bezier(0.16, 1, 0.3, 1);" style-hover="background-position: -20% 0; color: #000077;"><span style="display: {{ navFull }};">Book a free admissions call</span><span style="display: {{ navShort }};">Book a call</span><span aria-hidden="true" data-arw="" style="display: inline-block; margin-left: 0.6rem; transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);">→</span></a>
   </div>
 </header>
 
@@ -125,7 +219,7 @@
         <p data-m="up" data-d="600" data-t="450" style="margin: clamp(18px, 2.2vw, 28px) 0 0; max-width: 26ch; font-size: clamp(1.25rem, 2.2vw, 1.75rem); font-weight: 600; line-height: 1.28; letter-spacing: -0.015em; text-wrap: balance;">The full IB Diploma Programme, delivered entirely&nbsp;online.</p>
         <p data-m="up" data-d="680" data-t="450" style="margin: 16px 0 0; max-width: 52ch; font-size: clamp(1.0625rem, 0.95rem + 0.4vw, 1.25rem); line-height: 1.55; text-wrap: pretty;">Eastwood Global is one of seven schools worldwide <br style="display: {{ heroBr }};">allowed by the IB to deliver the complete Diploma&nbsp;online.</p>
         <div data-m="up" data-d="800" data-t="300" style="display: flex; margin-top: 32px;">
-          <a data-btn="" href="https://www.eastwood.global/enquire-now-form?utm_source=ib&amp;utm_medium=landing&amp;utm_content=hero" style="display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 14px 28px; background-color: #D7FF00; background-image: linear-gradient(110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 65%); background-size: 250% 100%; background-position: 120% 0; background-repeat: no-repeat; color: #000077; font-size: 1rem; font-weight: 700; text-decoration: none; border-radius: 999px; transition: background-position 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="background-position: -20% 0; color: #000077;" style-active="transform: translateY(1px);">Book a free admissions call<span aria-hidden="true" data-arw="" style="display: inline-block; margin-left: 0.6rem; transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);">→</span></a>
+          <a data-btn="" href="https://www.eastwood.global/enquire-now-form" style="display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 14px 28px; background-color: #D7FF00; background-image: linear-gradient(110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 65%); background-size: 250% 100%; background-position: 120% 0; background-repeat: no-repeat; color: #000077; font-size: 1rem; font-weight: 700; text-decoration: none; border-radius: 999px; transition: background-position 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="background-position: -20% 0; color: #000077;" style-active="transform: translateY(1px);">Book a free admissions call<span aria-hidden="true" data-arw="" style="display: inline-block; margin-left: 0.6rem; transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);">→</span></a>
         </div>
       </div>
     </div>
@@ -248,7 +342,7 @@
       </div>
       <sc-if value="{{ showMidCta }}" hint-placeholder-val="{{ true }}">
         <div style="display: flex; margin-top: clamp(40px, 5vw, 64px);">
-          <a data-btn="" href="https://www.eastwood.global/enquire-now-form?utm_source=ib&amp;utm_medium=landing&amp;utm_content=mid" style="display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 14px 28px; background-color: #000077; background-image: linear-gradient(110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 65%); background-size: 250% 100%; background-position: 120% 0; background-repeat: no-repeat; color: #FFFFFF; font-size: 1rem; font-weight: 700; text-decoration: none; border-radius: 999px; transition: background-position 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="background-position: -20% 0; color: #FFFFFF;" style-active="transform: translateY(1px);">Book a free admissions call<span aria-hidden="true" data-arw="" style="display: inline-block; margin-left: 0.6rem; transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);">→</span></a>
+          <a data-btn="" href="https://www.eastwood.global/enquire-now-form" style="display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 14px 28px; background-color: #000077; background-image: linear-gradient(110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 65%); background-size: 250% 100%; background-position: 120% 0; background-repeat: no-repeat; color: #FFFFFF; font-size: 1rem; font-weight: 700; text-decoration: none; border-radius: 999px; transition: background-position 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="background-position: -20% 0; color: #FFFFFF;" style-active="transform: translateY(1px);">Book a free admissions call<span aria-hidden="true" data-arw="" style="display: inline-block; margin-left: 0.6rem; transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);">→</span></a>
         </div>
       </sc-if>
     </div>
@@ -530,7 +624,7 @@
       </h2>
       <p style="margin: clamp(18px, 2.2vw, 26px) 0 0; max-width: 44ch; font-size: clamp(1.0625rem, 0.95rem + 0.5vw, 1.25rem); line-height: 1.55; color: #FFFFFF; text-wrap: pretty;">Speak with our admissions team about your child’s place at Eastwood&nbsp;Global.</p>
       <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 20px; margin-top: 28px;">
-        <a data-btn="" href="https://www.eastwood.global/enquire-now-form?utm_source=ib&amp;utm_medium=landing&amp;utm_content=footer" style="display: inline-flex; align-items: center; justify-content: center; min-height: 60px; padding: 16px 32px; background-color: #D7FF00; background-image: linear-gradient(110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 65%); background-size: 250% 100%; background-position: 120% 0; background-repeat: no-repeat; color: #000077; font-size: 1.0625rem; font-weight: 700; text-decoration: none; border-radius: 999px; transition: background-position 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="background-position: -20% 0; color: #000077;" style-active="transform: translateY(1px);">Book a free admissions call<span aria-hidden="true" data-arw="" style="display: inline-block; margin-left: 0.6rem; transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);">→</span></a>
+        <a data-btn="" href="https://www.eastwood.global/enquire-now-form" style="display: inline-flex; align-items: center; justify-content: center; min-height: 60px; padding: 16px 32px; background-color: #D7FF00; background-image: linear-gradient(110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 65%); background-size: 250% 100%; background-position: 120% 0; background-repeat: no-repeat; color: #000077; font-size: 1.0625rem; font-weight: 700; text-decoration: none; border-radius: 999px; transition: background-position 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="background-position: -20% 0; color: #000077;" style-active="transform: translateY(1px);">Book a free admissions call<span aria-hidden="true" data-arw="" style="display: inline-block; margin-left: 0.6rem; transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);">→</span></a>
         <p style="margin: 0; font-size: 1rem; line-height: 1.55; color: #FFFFFF;">Prefer to talk first? <a href="https://wa.me/41799625034" style="color: #FFFFFF; font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; transition: color 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="color: #D7FF00; text-decoration-thickness: 2px;">Message us on&nbsp;WhatsApp.</a></p>
       </div>
       
@@ -568,7 +662,7 @@
     </div>
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; margin-top: 32px; padding-top: 20px; border-top: 1px solid #D3D9E8; font-size: 0.875rem; line-height: 1.55; color: #43476B;">
       <p style="margin: 0; max-width: 68ch;">© 2026 Eastwood Schools. All rights reserved.&nbsp;</p>
-      <p style="margin: 0; display: flex; gap: 16px;"><a href="https://www.eastwood.global/legal" style="color: #000077; text-decoration: underline; text-decoration-color: rgba(0,0,119,0.3); display: inline-block; padding-block: 3px; text-underline-offset: 4px; transition: text-decoration-color 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="color: #000077; text-decoration-color: #000077;">Legal</a><a href="https://www.eastwood.global/privacy-policy" style="color: #000077; text-decoration: underline; text-decoration-color: rgba(0,0,119,0.3); display: inline-block; padding-block: 3px; text-underline-offset: 4px; transition: text-decoration-color 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="color: #000077; text-decoration-color: #000077;">Privacy Policy</a></p>
+      <p style="margin: 0; display: flex; gap: 16px;"><a href="https://www.eastwood.global/legal" style="color: #000077; text-decoration: underline; text-decoration-color: rgba(0,0,119,0.3); display: inline-block; padding-block: 3px; text-underline-offset: 4px; transition: text-decoration-color 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="color: #000077; text-decoration-color: #000077;">Legal</a><a href="https://www.eastwood.global/privacy-policy" style="color: #000077; text-decoration: underline; text-decoration-color: rgba(0,0,119,0.3); display: inline-block; padding-block: 3px; text-underline-offset: 4px; transition: text-decoration-color 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="color: #000077; text-decoration-color: #000077;">Privacy Policy</a><a href="#cookie-settings" style="color: #000077; text-decoration: underline; text-decoration-color: rgba(0,0,119,0.3); display: inline-block; padding-block: 3px; text-underline-offset: 4px; transition: text-decoration-color 200ms cubic-bezier(0.22, 1, 0.36, 1);" style-hover="color: #000077; text-decoration-color: #000077;">Cookie settings</a></p>
     </div>
   </div>
 </footer>

@@ -9,10 +9,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="IB Diploma Programme online | Eastwood Global">
 <meta property="og:description" content="Live, teacher-led IB Diploma classes on two global timetables. One of seven schools worldwide allowed by the IB to deliver the Diploma online.">
-<meta property="og:image" content="assets/eg-hero-students.webp">
+<meta property="og:image" content="https://ib.eastwood.global/assets/eg-hero-students.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<!-- Set to the live URL before launch, e.g. <link rel="canonical" href="https://ib.eastwood.global/"> -->
+<link rel="canonical" href="https://ib.eastwood.global/">
+<meta property="og:url" content="https://ib.eastwood.global/">
 <link rel="icon" href="assets/eg-symbol.png">
 <link rel="preload" as="image" href="assets/eg-hero-students.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +36,8 @@ if(saved)gtag('consent','update',egConsentMap(saved));
 </script>
 <!-- Google Tag Manager (same container as eastwood.global) -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PGWND4HR');</script>
+<!-- HubSpot tracking -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/143834620.js"></script>
 <script>
 (function(){
 var PIXEL='233289672835066',GA4='G-90VHGTGEM0',own={meta:false};
@@ -1017,6 +1020,29 @@ class Component extends DCLogic {
     };
   }
 }
+</script>
+<!-- Carry campaign parameters to enquiry links (applied at click time) -->
+<script>
+(function () {
+  var keep = /^(utm_[a-z]+|gclid|fbclid|msclkid|li_fat_id)$/;
+  var carry = [];
+  new URLSearchParams(window.location.search).forEach(function (v, k) {
+    if (keep.test(k)) carry.push([k, v]);
+  });
+  if (!carry.length) return;
+  function tag(e) {
+    var a = e.target.closest && e.target.closest('a[href*="eastwood.global/enquire-now-form"]');
+    if (!a) return;
+    var url = new URL(a.href);
+    carry.forEach(function (p) {
+      if (!url.searchParams.has(p[0])) url.searchParams.set(p[0], p[1]);
+    });
+    a.href = url.toString();
+  }
+  document.addEventListener('click', tag, true);
+  document.addEventListener('auxclick', tag, true);
+  document.addEventListener('contextmenu', tag, true);
+})();
 </script>
 </body>
 </html>
